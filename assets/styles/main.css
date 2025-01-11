@@ -14,6 +14,13 @@ html {
 section {
   padding: 100px 0 0 0;
 }
+.moon {
+  --jasmine: #fbd784;
+  --bg: #0b1d26;
+  background-color: #000000;
+  cursor: pointer;
+}
+
 :root {
   --white: #ffffff;
   --black: #000000;
