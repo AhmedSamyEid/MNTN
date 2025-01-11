@@ -11,6 +11,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+section {
+  padding: 100px 0 0 0;
+}
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -108,7 +111,7 @@ h1 {
 main {
   margin-top: 300px;
 }
-.containers {
+.containers , .containerss {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -119,14 +122,18 @@ main {
   margin-left: 10%;
   max-width: 80%;
 }
-.hero {
+.hero ,.heros {
   flex: 1 1 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
   margin: 0 50px 0 0;
 }
-.hero img {
+.hero img ,.heros img {
   max-width: 40%;
   height: auto;
+}
+.heros {
+  position: relative;
+  right: 20%;
 }
