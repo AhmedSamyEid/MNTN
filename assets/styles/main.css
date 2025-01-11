@@ -6,6 +6,7 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: var(--bg);
+  height: 6000px;
 }
 :root {
   --white: #ffffff;
@@ -35,16 +36,18 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
-  background-image: url("../../assets/images/hero.webp");
-  width: 100%;
+
+  /* width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 header {
-  z-index: 99999999999996;
+  position: sticky;
+  top: 0;
+  background-color: #193f51;
 }
 .logo a {
   font-size: 25px;
@@ -60,11 +63,13 @@ ul {
   display: flex;
   gap: 35px;
 }
-  input ,label {
+input,
+label {
   display: none;
 }
 @media (max-width: 991px) {
-  ul , input{
+  ul,
+  input {
     display: none;
   }
   label {
@@ -78,18 +83,21 @@ ul {
     text-align: center;
     position: fixed;
     left: 60%;
-    
   }
   #check:checked ~ ul a {
     line-height: 60px;
   }
 }
+.hore img {
+  width: 100%;
+  height: 100vh;
+}
 .hore {
   text-align: center;
-  margin-top: -500px;
+  margin-top: -80px;
 }
 
-h4{
+h4 {
   color: var(--jasmine);
   font-size: 20px;
 }
@@ -97,4 +105,7 @@ h1 {
   color: var(--white);
   font-size: 60px;
   font-weight: 100;
+}
+.text {
+  margin-top: -450px;
 }
